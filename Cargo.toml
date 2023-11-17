@@ -1,0 +1,26 @@
+[package]
+name = "currency-bot"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+dotenv = "*"
+tracing = "*"
+tracing-subscriber = "*"
+mongodb = "*"
+rand = "*"
+chrono = "*"
+url = "*"
+uwuify = "0.2.1"
+serde_json = "*"
+
+[dependencies.tokio]
+version = "*"
+features = ["macros", "signal", "rt-multi-thread", "time"]
+
+[dependencies.serenity]
+git = "https://github.com/serenity-rs/serenity.git"
+branch = "next"
+features = ["cache", "framework", "standard_framework", "rustls_backend", "model", "collector"]
